@@ -1,0 +1,543 @@
+@media only screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 1.5rem;
+        --bigger-font-size: 2rem;
+        --biggest-font-size: 3rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.875rem;
+    }
+}
+
+
+
+/*=================== login==================== */
+.login-page {
+    padding-top: 70px !important;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.login {
+    margin: auto;
+    width: 450px;
+    height: 350px;
+    border-radius: 30px;
+    background: var(--white-color);
+    box-shadow: 35px 35px 70px #b3b3b3, -35px -35px 70px #ffffff;
+
+}
+
+.icon {
+    color: var(--dark-color);
+    font-size: var(--h2-font-size);
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.login-title {
+    font-size: var(30px);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-error {
+    font-size: 14px;
+    text-align: center;
+    color: red;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.form label {
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+
+
+}
+
+.form input {
+    border-radius: 3px;
+    font-weight: bold;
+    width: 88%;
+    margin-bottom: 10px;
+}
+
+.form select {
+    width: 90%;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+.pass-icon {
+    margin-left: -2px;
+    font-size: 20px;
+    color: var(--dark-color);
+    opacity: 80%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.pass-icon2 {
+    color: var(--dark-color) !important;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.remember label {
+    font-size: var(--smaller-font-size);
+    margin-bottom: 20px;
+}
+
+.button-login {
+    font-size: var(--smaller-font-size);
+    width: 50%;
+    margin-left: 79px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-signup {
+    font-size: var(--normal-font-size);
+    padding-left: 25px;
+}
+
+.login-signup a:hover {
+    color: var(--dark-color);
+}
+
+/* ==========Register========= */
+.register {
+    margin: auto;
+    width: 550px;
+    height: 500px;
+    border-radius: 30px;
+    background: var(--white-color);
+    box-shadow: 35px 35px 70px #b3b3b3, -35px -35px 70px #ffffff;
+}
+
+.button-daftar {
+    font-size: var(--smaller-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: 140px;
+    margin-bottom: 20px;
+}
+
+/* ==========Index Home============ */
+/* navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Viga';
+    font-size: 30px;
+}
+
+
+/* jumbotron */
+.jumbotron {
+    background-image: url(../ficture/newback/gritt-zheng-77M4EfAOn-w-unsplash.jpg);
+    background-size: cover;
+    height: 545px;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: o;
+}
+
+/* panel-info */
+.panel-info {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-top: -64px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.panel-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.panel-info p {
+    font-size: 14px;
+    color: #acacac;
+
+}
+
+.panel-info p.open {
+    margin-top: -10px;
+}
+
+
+/* info menu */
+.info-menu {
+    margin-top: 150px;
+    margin-left: 50px;
+
+}
+
+/* card */
+.card {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    width: 14rem;
+    margin-top: 33px;
+    margin-left: -50px;
+}
+
+.card p {
+    font-size: 10px;
+}
+
+.card img {
+    width: 150px;
+    margin-left: 40px;
+}
+
+.info2 {
+    margin-top: 40px;
+    margin-left: -50px;
+    width: 14rem;
+
+}
+
+.info2 img {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 100px;
+}
+
+/* galery */
+.galery {
+
+    margin-top: 120px;
+    margin-left: -280px;
+
+
+}
+
+.galery img {
+    width: 500px;
+
+}
+
+.galery .satu img {
+    margin-left: -200px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.galery .dua img {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 260px;
+    margin-top: -60px
+}
+
+.galery .text {
+    margin-left: 200px;
+    margin-top: 20px;
+
+}
+
+.galery .text h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* testtimoni */
+
+.testimoni {
+    margin-top: 50px;
+}
+
+
+.testimoni h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.testimoni figure img {
+    width: 60px;
+    height: 70px;
+    margin: 20px 15px 10px;
+    opacity: 0.6;
+}
+
+.testimoni figure img.utama {
+    width: 90px;
+    height: 100px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.testimoni figure h5 {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(17, 17, 82);
+}
+
+.testimoni figure p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 6px;
+
+}
+
+
+
+/* utilty */
+.fa-shopping-cart {
+    font-size: 20px;
+    color: black;
+}
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 140px;
+    font-size: 30px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0, 8);
+    margin-bottom: 6px;
+
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* button info */
+.botton {
+    position: relative;
+    display: flexbox;
+    background-color: #acacac;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.item h4 {
+    font-size: 20px;
+
+}
+
+.item p {
+    font-size: 15px;
+}
+
+.kontak {
+    margin-left: -10px;
+}
+
+.kontak h4 {
+    font-size: 20px;
+}
+
+.kontak li {
+    margin-left: -50px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.kontak span {
+    padding-left: 10px;
+}
+
+.social {
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.social h4 {
+    font-size: 20px;
+}
+
+.social span,
+i {
+    padding-left: 10px;
+}
+
+.social a {
+    text-decoration: solid;
+}
+
+.nav-boton {
+    flex-direction: column;
+}
+
+.nav-boton h4 {
+    font-size: 20px;
+}
+
+.fa-copyright {
+    margin-left: 65px;
+}
+
+.svg-up svg {
+    margin-bottom: -22px;
+}
+
+svg {
+    margin-top: 20px;
+}
+
+/* social icon */
+
+
+.fa-facebook {
+    color: #0863dc;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+/* Dekstop version */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        color: black !important;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0, 0, 8);
+    }
+
+    .nav-link {
+
+        text-transform: uppercase;
+        margin-right: 15px;
+    }
+
+    .nav-link:hover::after {
+
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0863dc;
+        width: 50%;
+        margin: auto;
+        padding-top: 5px;
+        margin-bottom: -8px;
+    }
+
+    .fa-shopping-cart {
+        color: white;
+        font-size: 20px;
+    }
+
+    .jumbotron {
+        margin-top: -85px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 64px;
+    }
+
+    .testimoni h5 {
+        font-size: 34px;
+    }
+
+    .info-menu .info {
+
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+
+    .galery .satu img {
+        width: 500px;
+        margin-top: -50px;
+        margin-left: -120px;
+    }
+
+    .galery .dua img {
+        width: 100%;
+        margin-left: -260px;
+        margin-top: 260px;
+    }
+
+    .galery .text {
+        margin-top: 40px;
+        margin-left: -800px;
+    }
+
+    .testimoni {
+        margin-top: -100px;
+    }
+
+    .nav a:hover {
+
+        text-decoration: solid;
+    }
+
+    a {
+        text-decoration: none;
+        color: black !important;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0, 0, 8);
+    }
+
+    .fitur {
+        margin-left: 90px;
+    }
+
+    .kontak {
+        margin-left: -240px;
+    }
+
+    .item {
+        margin-left: -200px;
+    }
+
+    .social {
+        margin-left: -30px;
+
+    }
+
+    .fa-copyright {
+        padding-top: 10px;
+        margin-left: 500px;
+    }
+
+    .social a {
+        text-decoration: solid;
+    }
+}
