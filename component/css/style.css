@@ -8,7 +8,229 @@
     }
 }
 
+/* img index */
+.food-img {
+    width: 12rem;
+    height: 12rem;
+}
 
+/* About */
+.about h3 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 60px;
+    transform: translate(480px, 90px);
+}
+
+.about p {
+    position: absolute;
+    top: 60px;
+    transform: translate(140px, 160px);
+
+}
+
+.about .p2 {
+    position: absolute;
+    top: 60px;
+    transform: translate(400px, 190px);
+
+}
+
+.about span {
+    font-weight: bold;
+}
+
+/* Galery */
+
+.title-galery {
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.title-galery h4 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.tempat img {
+    width: 29%;
+    padding: 10px 9px 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tempat h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.costumer img {
+    width: 29%;
+    padding: 10px 9px 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.costumer h4 {
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.barista img {
+    width: 29%;
+    padding: 10px 9px 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.barista h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* ==================product============= */
+.buku-menus h3 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 60px;
+    transform: translate(480px, 90px);
+}
+
+.buku-menus p {
+    position: absolute;
+    top: 60px;
+    transform: translate(330px, 160px);
+
+}
+
+.category {
+    background-color: rgb(211, 179, 119);
+    font-size: 20px;
+
+
+}
+
+.prod-cate a {
+    color: #ffffff;
+}
+
+.head {
+    position: relative;
+    margin-top: 30px;
+}
+
+.head p {
+    position: absolute;
+    top: 50px;
+    transform: translate(0, 180px);
+    color: #b3b3b3;
+
+}
+
+.head h4 {
+    position: absolute;
+    top: 50px;
+    transform: translate(0, 125px);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
+
+.food p {
+    position: relative;
+    top: -50px;
+    transform: translate(0, 180px);
+    color: #b3b3b3;
+}
+
+.food h4 {
+    position: relative;
+    top: 100px;
+    /* transform: translate(0, 125px); */
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.food {
+    position: inherit;
+    margin-top: 100px;
+}
+
+.ice p {
+    position: relative;
+    top: -50px;
+    transform: translate(0, 180px);
+    color: #b3b3b3;
+
+}
+
+.ice h4 {
+    position: relative;
+    top: 90px;
+    /* transform: translate(0, 125px); */
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.drink-coffe {
+    position: relative;
+    margin-top: 70px;
+}
+
+.drink-coffe p {
+    position: relative;
+    top: -50px;
+    transform: translate(0, 180px);
+    color: #b3b3b3;
+
+}
+
+.drink-coffe h4 {
+    position: absolute;
+    top: 50px;
+    /* transform: translate(0, 125px); */
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.product-box {
+    position: relative;
+    margin-top: 300px;
+    left: 45px;
+
+}
+
+.product-drink {
+    position: relative;
+    margin-top: 150px;
+    left: 50px;
+
+}
+
+.product-tea {
+    position: relative;
+    margin-top: 180px;
+    left: 45px;
+}
+
+.product-food {
+    position: relative;
+    padding: 0;
+    margin-top: 180px;
+    left: 30px;
+}
 
 /*=================== login==================== */
 .login-page {
@@ -131,10 +353,70 @@ li {
 }
 
 /* ==========Index Home============ */
+/* crauser */
+.slide {
+    position: relative;
+    margin-top: 30px;
+    /* height: 80px;
+    width: 100% */
+}
+
+.carousel-item img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.carousel-caption span {
+    font-weight: bold;
+    color: #eee;
+    font-size: 20px;
+}
+
+.carousel-caption a {
+    position: absolute;
+    top: 40px;
+    transform: translate(-40px, -80px);
+
+}
+
+.carousel-caption h5 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    top: 40px;
+    transform: translate(210px, -300px);
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    transform: translate(25px, -180px);
+
+}
+
+.product-cor p {
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    transform: translate(30px, -180px);
+}
+
+.product-cor h5 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    top: 40px;
+    transform: translate(200px, -300px);
+}
+
 /* navbar */
+
 .navbar {
     position: relative;
     z-index: 1;
+    height: 40px;
 }
 
 .navbar-brand {
@@ -144,8 +426,8 @@ li {
 
 
 /* jumbotron */
-.jumbotron {
-    background-image: url(../ficture/newback/gritt-zheng-77M4EfAOn-w-unsplash.jpg);
+/* .jumbotron {
+    background-image: url('/ficture/newback/gritt-zheng-77M4EfAOn-w-unsplash.jpg');
     background-size: cover;
     height: 545px;
     text-align: center;
@@ -167,13 +449,14 @@ li {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     position: absolute;
     bottom: o;
-}
+} */
 
 /* panel-info */
 .panel-info {
+    position: relative;
+    margin-top: 190px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
     background-color: white;
-    margin-top: -64px;
     border-radius: 20px;
     padding: 30px;
 }
@@ -198,12 +481,32 @@ li {
 
 }
 
+.panel-info li i {
+    margin: 4px 5px 3px;
+    color: #acacac;
+}
+
+.panel-info span {
+
+    color: #acacac;
+}
+
 .panel-info p.open {
     margin-top: -10px;
 }
 
 
 /* info menu */
+.title-cate {
+    position: relative;
+    margin-top: 100px;
+}
+
+.title-cate h4 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .info-menu {
     margin-top: 150px;
     margin-left: 50px;
@@ -212,10 +515,17 @@ li {
 
 /* card */
 .card {
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
-    width: 14rem;
-    margin-top: 33px;
-    margin-left: -50px;
+    position: relative;
+    border-radius: 20px;
+    width: 250px;
+
+    background-color: white;
+    padding: 20px 20px 20px;
+    margin-left: -15;
+    /* padding-top: 20px; */
+    margin-top: 14px;
+
+
 }
 
 .card p {
@@ -223,21 +533,10 @@ li {
 }
 
 .card img {
-    width: 150px;
-    margin-left: 40px;
-}
-
-.info2 {
-    margin-top: 40px;
-    margin-left: -50px;
-    width: 14rem;
-
-}
-
-.info2 img {
-    margin-top: 10px;
-    margin-left: 30px;
-    width: 100px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* galery */
@@ -539,5 +838,32 @@ svg {
 
     .social a {
         text-decoration: solid;
+    }
+
+    .slide {
+        position: relative;
+        margin-top: -5px;
+        /* height: 80px;
+        width: 100% */
+    }
+
+    .carousel-caption h5 {
+        top: 40px;
+        transform: translate(320px, -300px);
+    }
+
+    .carousel-caption p {
+        top: 40px;
+        transform: translate(150px, -180px);
+    }
+
+    .product-cor h5 {
+        top: 40px;
+        transform: translate(310px, -300px);
+    }
+
+    .product-cor p {
+        top: 40px;
+        transform: translate(150px, -180px);
     }
 }

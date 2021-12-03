@@ -11,6 +11,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="ficture/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ficture/favicon/favicon-16x16.png">
     <link rel="manifest" href="ficture/favicon/site.webmanifest">
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/TextPlugin.min.js"></script>
 
 
     <!-- Bootstrap CSS -->
@@ -28,7 +31,9 @@
     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/fontawesome.min.css">
     <!-- my style css -->
     <link rel="stylesheet" href="../caffeshop/component/css/style.css" <?= filemtime("../css/style.css") ?>>
-    <title>CaffeShop|Home</title>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>CaffeRolles|Home</title>
 </head>
 
 <body>
@@ -42,17 +47,17 @@
     <!-- navabar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Cafferroles</a>
+            <a class="navbar-brand" href="/caffeshop/"><img src="../caffeshop/ficture/logo/coffee.png" alt="">CaffeRolles</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#">home</a>
-                    <a class="nav-link" href="#">galeri</a>
-                    <a class="nav-link" href="#">product</a>
-                    <a class="nav-link" href="#">about</a>
-                    <a class="nav-icon" href="#"><i class="fas fa-shopping-cart juxti"></i></a>
+                    <a class="nav-link" href="/caffeshop/">home</a>
+                    <a class="nav-link" href="../caffeshop/galery.php">galeri</a>
+                    <a class="nav-link" href="../caffeshop/product1.php">product</a>
+                    <a class="nav-link" href="../caffeshop/about.php">about</a>
+                    <!-- <a class="nav-icon" href="#"><i class="fas fa-shopping-cart juxti"></i></a> -->
                 </div>
             </div>
         </div>
@@ -60,13 +65,47 @@
     <!-- akhir navbar -->
 
 
-    <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Dalam <span> secangkir kopi </span> pahit dan manis bertemu dalam <span>kehangatan </span></h1>
-            <a href="" class="btn btn-primary tombol">more</a>
+    <!-- jumbotron crouser slide -->
+    <div class="slide-all">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../caffeshop/ficture/galery/tempat/slide/new3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Galery</h5>
+                        <p> <span> Kehangatan</span> yang tersimpan dalam secangkir kopi untuk kenangan <br> Dalam <span> Pahit dan Manisnya </span> keadaan</p>
+                        <a href="/caffeshop/galery.php" class="btn btn-primary tombol">More</a>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../caffeshop/ficture/galery/tempat/slide/product.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block product-cor">
+                        <h5>Product</h5>
+                        <p> <span> Pahit dan Manis </span> Tercampur dalam kehangatan <span> Secangkir Kopi</span> </p>
+                        <a href="/caffeshop/product1.php" class="btn btn-primary tombol">More</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button> -->
         </div>
     </div>
+
+
     <!-- akhir jumbotron -->
 
 
@@ -74,27 +113,30 @@
     <!-- container -->
     <div class="container">
         <!-- panel info -->
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-10 panel-info ">
-            <div class="row">
-                <div class="col-lg">
-                    <img src="../caffeshop/ficture/info panel/clock.png" alt="clock" class="float-left">
-                    <h4>open</h4>
-                    <p>seni-jum'at 08.00-21.00</p>
-                    <p class="open">sabtu-minggu 07.30-22.00</p>
-                </div>
+        <div class="row justify-content-center">
+            <div class="col-10 panel-info " data-aos="fade-up" data-aos-offset="100" data-aos-delay="45" data-aos-duration="1000">
+                <div class="row">
+                    <div class="col-lg">
+                        <img src="../caffeshop/ficture/info panel/clock.png" alt="clock" class="float-left">
+                        <h4>open</h4>
+                        <p>seni-jum'at 08.00-21.00</p>
+                        <p class="open">sabtu-minggu 07.30-22.00</p>
+                    </div>
 
-                <div class="col-lg">
-                    <img src="../caffeshop/ficture/info panel/Screenshot_2021-09-23-17_105x109-removebg-preview.png" alt="whatsapp" class="float-left">
-                    <h4>kontak</h4>
-                    <p>081-069684</p>
-                </div>
+                    <div class="col-lg">
+                        <!-- <img src="../caffeshop/ficture/info panel/Screenshot_2021-09-23-17_105x109-removebg-preview.png" alt="whatsapp" class="float-left"> -->
+                        <h4>kontak</h4>
+                        <!-- <p>081-069684</p>
+                        <p>caferoles@mail.com</p> -->
+                        <li class="nav-item"><i class="fas fa-phone-alt"></i><span>0818192712119</span></li>
+                        <li class="nav-item"><i class="far fa-envelope"></i><span>caferoles@mail.com</span></li>
+                    </div>
 
-                <div class="col-lg">
-                    <img src="../caffeshop/ficture/info panel/location-pin.png" alt="about" class="float-left">
-                    <h4>location</h4>
-                    <p>jl.selalu makmur dan tidak kendor</p>
+                    <div class="col-lg">
+                        <img src="../caffeshop/ficture/info panel/location-pin.png" alt="about" class="float-left">
+                        <h4>location</h4>
+                        <p>jl.selalu makmur dan tidak kendor</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,37 +145,53 @@
     <!-- kahir panel info -->
 
     <!-- info menu -->
-
+    <div class="container title-cate">
+        <h4>Category product</h4>
+    </div>
     <section>
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <div class="row info-menu">
-                    <div class="col">
-                        <div class="card">
-                            <img src="../caffeshop/ficture/prouduct/late.jpg" class="card-img-center" alt="coffie">
-                            <div class="card-body">
-                                <h5 class="card-title">Capucino</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary tombol">Rp.12.0000</a>
+        <div class=" container product ">
+            <div class="row ">
+                <div class="col">
+                    <div class="row md-2 mt-3">
+                        <div class="col" data-aos="fade-left" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000">
+                            <div class="card">
+                                <img src="../caffeshop/product/non coffe/Hot_Black_Tea.jpg" class="card-img-center" alt="coffie">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Non Coffe </h5>
+                                    <a href="/caffeshop/product1.php#noncoffe" class="btn btn-primary tombol">More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card info2">
-                            <img src="../caffeshop/ficture/prouduct/kopihitam.jpg" class="card-img-top late" alt="coffie">
-                            <div class="card-body">
-                                <h5 class="card-title">kopi hitam</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary tombol">Rp.12.0000</a>
+                        <div class="col" data-aos="fade-left" data-aos-offset="100" data-aos-delay="45" data-aos-duration="1000">
+                            <div class="card">
+                                <img src="../caffeshop/product/food/Coffee_Toffee_-_Food_Snack_-_Main_Course_03b_1x.jpg" class="card-img-center food-img" alt="coffie">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Food And Snack </h5>
+                                    <a href="/caffeshop/product1.php#food" class="btn btn-primary tombol">More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste veniam, ad at unde aspernatur ullam optio nam. Accusamus, officia? </p>
-                        <div class="btn btn-primary">pesan</div>
+                        <div class="col" data-aos="fade-left" data-aos-offset="100" data-aos-delay="60" data-aos-duration="1000">
+                            <div class="card">
+                                <img src="../caffeshop/product/coffe drink/Cafe_White_Chocolate.jpg" class="card-img-center" alt="coffie">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Coffe drink </h5>
+                                    <a href="/caffeshop/product1.php#coffedrink" class="btn btn-primary tombol">More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-offset="100" data-aos-delay="70" data-aos-duration="1000">
+                            <div class="card ">
+                                <img src="../caffeshop/product/coffe box/java ciwidey.jpg " class="card-img-top late " alt="coffie" ">
+                                <div class=" card-body">
+                                <h5 class="card-title">Coffe Box</h5>
+                                <a href="/caffeshop/product1.php#box" class="btn btn-primary tombol">More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -146,15 +204,15 @@
             <div class="col galery">
                 <div class="row">
                     <div class="col satu">
-                        <img src="../caffeshop/ficture/galery/abstract-blur-coffee-shop.jpg" alt="blurcoffeshop">
+                        <img src="../caffeshop/ficture/galery/tempat/abstract-blur-coffee-shop.jpg" alt="blurcoffeshop">
                     </div>
                     <div class="col dua">
-                        <img src="../caffeshop/ficture/galery/wooden-board-empty-table-top-blurred-background.jpg" alt="bluerbackground">
+                        <img src="../caffeshop/ficture/galery/tempat/wooden-board-empty-table-top-blurred-background.jpg" alt="bluerbackground">
                     </div>
                     <div class="col text">
-                        <h5>galery</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam sunt quidem autem eum ipsa.</p>
-                        <a href="#" class="btn btn-primary tombol"> more</a>
+                        <h5>Galery</h5>
+                        <p>Kami selalu menyimpan kenangan mu bersama kami</p>
+                        <a href="../caffeshop/galery.php" class="btn btn-primary tombol"> more</a>
                     </div>
                 </div>
             </div>
@@ -252,7 +310,11 @@
             </div>
             <!-- akhir nav bawah -->
 
-            <script src="../component/js/script.js"></script>
+            <!-- aos -->
+            s <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
 </body>
 
 </html>
