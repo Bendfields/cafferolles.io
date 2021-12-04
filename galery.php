@@ -51,16 +51,16 @@
     <!-- navabar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/caffeshop/">CaffeRolles</a>
+            <a class="navbar-brand" href="/caffeshop/"><img src="../caffeshop/ficture/logo/coffee.png" alt="">CaffeRolles</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="/caffeshop/"><img src="../caffeshop/ficture/logo/coffee.png" alt="">home</a>
-                    <a class="nav-link" href="../caffeshop/galery.php">galeri</a>
-                    <a class="nav-link" href="../caffeshop/product1.php">product</a>
-                    <a class="nav-link" href="../caffeshop/about.php">about</a>
+                    <a class="nav-link" href="/caffeshop/">Home</a>
+                    <a class="nav-link" href="../caffeshop/galery.php">Galeri</a>
+                    <a class="nav-link" href="../caffeshop/product1.php">Product</a>
+                    <a class="nav-link" href="../caffeshop/about.php">About</a>
                     <!-- <a class="nav-icon" href="#"><i class="fas fa-shopping-cart juxti"></i></a> -->
                 </div>
             </div>

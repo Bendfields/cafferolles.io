@@ -21,20 +21,20 @@
     font-weight: bold;
     text-transform: uppercase;
     top: 60px;
-    transform: translate(480px, 90px);
+    transform: translate(380px, 90px);
 }
 
 .about p {
     position: absolute;
     top: 60px;
-    transform: translate(140px, 160px);
+    transform: translate(80px, 160px);
 
 }
 
 .about .p2 {
     position: absolute;
     top: 60px;
-    transform: translate(400px, 190px);
+    transform: translate(298px, 190px);
 
 }
 
@@ -68,6 +68,10 @@
     font-size: 30px;
 }
 
+.costumer {
+    position: relative;
+}
+
 .costumer img {
     width: 29%;
     padding: 10px 9px 10px;
@@ -98,13 +102,13 @@
     font-weight: bold;
     text-transform: uppercase;
     top: 60px;
-    transform: translate(480px, 90px);
+    transform: translate(380px, 90px);
 }
 
 .buku-menus p {
     position: absolute;
     top: 60px;
-    transform: translate(330px, 160px);
+    transform: translate(230px, 160px);
 
 }
 
@@ -424,32 +428,12 @@ li {
     font-size: 30px;
 }
 
-
-/* jumbotron */
-/* .jumbotron {
-    background-image: url('/ficture/newback/gritt-zheng-77M4EfAOn-w-unsplash.jpg');
-    background-size: cover;
-    height: 545px;
-    text-align: center;
-    position: relative;
-
-
+.navbar-brand img {
+    max-width: 50px;
+    width: 14%;
+    margin-top: -10px;
 }
 
-.jumbotron .container {
-    z-index: 1;
-    position: relative;
-}
-
-.jumbotron::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 0%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    position: absolute;
-    bottom: o;
-} */
 
 /* panel-info */
 .panel-info {
@@ -620,29 +604,14 @@ li {
 
 
 /* utilty */
-.fa-shopping-cart {
-    font-size: 20px;
-    color: black;
-}
+
 
 .tombol {
     text-transform: uppercase;
     border-radius: 40px;
 }
 
-.jumbotron .display-4 {
-    color: white;
-    margin-top: 140px;
-    font-size: 30px;
-    font-weight: 100;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0, 8);
-    margin-bottom: 6px;
 
-}
-
-.jumbotron .display-4 span {
-    font-weight: 500;
-}
 
 /* button info */
 .botton {
@@ -843,6 +812,7 @@ svg {
     .slide {
         position: relative;
         margin-top: -5px;
+        z-index: 1;
         /* height: 80px;
         width: 100% */
     }
